@@ -50,7 +50,7 @@ var browserOperator = new BrowserOperator(parseExecutor.action, state),
 /*任务栏*/
 new TaskIconOperator(state, popHeadingEffect);
 
-/*打字机*/
+/*打字效果*/
 var writer = new EditWriter({
     parseText,
     browserOperator,
