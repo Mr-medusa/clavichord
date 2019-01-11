@@ -1,0 +1,48 @@
+/*marin-top*/
+.mb10{
+    margin-top: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.ml10{
+    margin-left: 30px;
+}
+
+/*checkbox-circle*/
+.checkbox-wrap {
+    position: relative;
+}
+.checkbox-wrap > input {
+    visibility: hidden;
+}
+.checkbox-wrap > .mask-checkbox {
+    width: 15px;
+    height: 15px;
+    color: #0e90d2;
+    border: 1px solid #0e90d2;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+.checkbox-wrap > input[type="checkbox"] + .mask-checkbox::before{
+    content: "\a0";
+
+}
+.checkbox-wrap > input[type="checkbox"]:checked + .mask-checkbox::before {
+    content: "\2714";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 0;
+    bottom: 3px;
+}
+.checkbox-wrap > .mask-checkbox:focus{
+    box-shadow: 0 0 3px 3px #d24711;
+}
+.checkbox-wrap > .mask-checkbox+label{
+    color:#0e90d2;
+    margin-left: 5px;
+}

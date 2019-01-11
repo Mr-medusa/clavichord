@@ -1,0 +1,16 @@
+/*content*/
+#browser> .content{
+    flex: 1;
+    min-width: 350px;
+    font : normal 75% Arial, Helvetica, sans-serif;
+    background-color: #363636;
+    overflow: hidden;
+}
+
+#particles-js{
+    height: 100%;
+    width: 100%;
+    background : url("particlesjs-background.jpg") left top no-repeat;
+    background-size: 100% 100%;
+    position: relative!important;
+}

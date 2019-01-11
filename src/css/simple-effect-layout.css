@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'inconsolatamedium';
+    src: url('fonts/inconsolata-webfont.woff2') format('woff2'),
+    url('fonts/inconsolata-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'obelixprobrokenregular';
+    src: url('fonts/obelixpro-broken-cyr-webfont.woff2') format('woff2'),
+    url('fonts/obelixpro-broken-cyr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face{
+    font-family: 'a_callingregular';
+    src: url('fonts/a_calling_font_d_by_7ntypes-webfont.woff2') format('woff2'),
+    url('fonts/a_calling_font_d_by_7ntypes-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*清除浮动代码*/
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
+body{
+    background-color: #000000;
+}
+
+/*type are*/
+.type-are{
+    width: 1100px;
+}
+
+/*nav*/
+.nav{
+    height: 60px;
+    background-color: #000000;
+    margin: auto;
+    flex: 1;
+}
+.nav>ul:first-child{
+    float: left;
+}
+.nav>ul:nth-child(2){
+    float: right;
+}
+.nav>ul>li{
+    float: left;
+    padding: 0 20px;
+}
+.nav>ul>li>a{
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav:hover li{
+    opacity: 0.4;
+}
+.nav>ul>li:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.nav>ul li{
+    font-family: "obelixprobrokenregular", Arial, sans-serif;
+    font-size: 14px;
+}
+.nav>ul >li a{
+    color: rgb(162, 251, 255);
+}
+.nav>ul:first-child>li:first-child{
+    font-family: "a_callingregular", Arial, sans-serif;
+    font-size: 25px;
+}
+.nav>ul:first-child>li:first-child a{
+    color: #ff8000;
+}
+
+/*layout*/
+.shock {
+    width: 100%;
+    height: calc(100% - 160px);
+    overflow: hidden;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.shock > .middle-pen{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.shock > .bottom-pen{
+    max-width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 50px 0 10px 0;
+}
+
+/*core*/
+.shock > .middle-pen > .browser-container {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+.shock > .middle-pen > .editor-container {
+    flex: 1;
+    padding: 0 50px 0 10px;
+}
+.shock > .middle-pen > .animations-container{
+    max-width: 150px;
+    /*min-width: 150px;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.shock > .middle-pen > .browser-container:hover,
+.shock > .middle-pen > .editor-container:hover
+{
+    opacity: 1;
+}
+
+/*task-icon*/
+.shock> .bottom-pen> .task-bars{
+    padding-bottom: 3px;
+    width: 100px;
+    height: 35px;
+    border-bottom: 3px solid rgb(190, 190, 190);
+}
+.shock> .bottom-pen> .task-bars>.task-icon{
+    float: right;
+    width: 35%;
+    height: 100%;
+}
+.shock> .bottom-pen> .task-bars>.task-icon:first-child{
+    background: url("../img/vscode-task-icon.png") no-repeat left bottom;
+}
+.shock> .bottom-pen> .task-bars>.task-icon:last-child{
+    background: url("../img/chrome-task-icon.png") no-repeat left bottom;
+}
+.shock> .bottom-pen> .task-bars:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*动画*/
+.animation-items{
+    flex: 0 0 initial;
+    display: flex;
+    flex-direction: column;
+}
+.animation-item{
+    margin-top: 10px;
+}
+.animation-items button {
+    color: #5558ff;
+    border: 1px solid #5558ff;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.animation-items:hover{
+    opacity: 1;
+}
+.animation-items .flat-buttons:hover {
+    border-radius: 3px;
+    border: 1px solid #5558ff;
+    color: #5558ff;
+}
+
+/*back-info*/
+.back-info{
+    width: 100%;
+    font-family: Graphik, sans-serif;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: none;
+}
+.back-info .back-heading {
+    display: inline-block;
+    margin: 20px 0 10px 2.4vw;
+    color: #fff;
+    font-size: 7.2vw;
+    line-height: 100%;
+    font-weight: 500;
+    letter-spacing: -0.2vw;
+}
+
+@media (min-width: 1600px){
+    .back-info .back-heading{
+        font-size: 110.4px;
+        margin-right: 28.8px;
+        letter-spacing: -2.4px;
+    }
+    .shock > .middle-pen > .browser-container{
+        padding: 0 50px;
+    }
+    .shock > .middle-pen > .editor-container{
+        padding: 0 50px;
+    }
+}

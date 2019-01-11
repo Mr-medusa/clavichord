@@ -1,0 +1,154 @@
+#browser{
+    border: 1px solid #1e1e1e;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+/*common a*/
+#browser .tab  a[class^="fa"],
+#browser .tool-bar  a[class^="fa"]{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#browser .tab a[class^="fa"]:hover,
+#browser .tool-bar a[class^="fa"]:hover{
+    background-color: #414141;
+}
+
+/*tab*/
+#browser>.tab{
+    box-sizing: border-box;
+    height: 32px;
+    max-height: 32px;
+    background-color: #0c0c0d;
+    color: #eaeaea;
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 50px;
+    flex: 1;
+}
+#browser>.tab div{
+    float: left;
+}
+#browser>.tab div:last-child{
+    float: right;
+}
+#browser>.tab div:first-child{
+    box-sizing: border-box;
+    line-height: 28px;
+    background-color: #323234;
+    padding: 0 10px 0 15px;
+    border-left: 2px solid #0c0c0d;
+    border-top: 2px solid rgba(0, 191, 255, 0.76);
+    box-shadow: -2px -2px 3px 3px #585858 inset;
+
+}
+#browser>.tab div>.icon{
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    background: url("../img/chrom-icon.png") no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+#browser>.tab div>.close{
+    margin-left: 10px;
+}
+#browser>.tab .plus{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+/*tool-bar*/
+#browser>.tool-bar{
+    height: 50px;
+    max-height: 50px;
+    line-height: 50px;
+    background-color: #323234;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+#browser>.tool-bar div{
+    flex: 0 1 initial;
+}
+#browser>.tool-bar div:last-child{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#browser>.tool-bar div:first-child a{
+    width: 25px;
+    margin-left: 5px;
+}
+#browser>.tool-bar div:nth-child(2) input{
+    outline: none;
+    width: 80%;
+    min-width: 300px;
+    height: 25px;
+    padding-left: 3px;
+    margin-right: 10px;
+    background-color: #474749;
+    border: 1px solid rgba(106, 106, 106, 0.58);
+    color: #ccccce;
+}
+
+/*content*/
+#browser> .content{
+    background-color: #434c56;
+    flex: 1;
+    display: flex;
+}
+
+/*-----------------maximize-----------------*/
+.shock-browser-container-maximize{
+    box-sizing: border-box;
+}
+.shock-browser-container-maximize>.middle-pen{
+    justify-content: flex-start;
+}
+
+.shock-browser-container-maximize>.middle-pen>.browser-container{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding:0;
+    flex: 0;
+}
+.shock-browser-container-maximize>.middle-pen>.browser-container>#browser{
+    border: none!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.shock-browser-container-maximize>.middle-pen>.browser-container>#browser>.content{
+}
+
+.shock-browser-container-maximize>.middle-pen>.editor-container>#editor{
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    z-index: 2;
+    min-width:600px!important;
+}
+.shock-browser-container-maximize>.middle-pen>.animations-container{
+    z-index: 2;
+}
+.shock-browser-container-maximize>.bottom-pen>.task-bars{
+    z-index: 2;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+/*-----------------maximize-----------------*/
