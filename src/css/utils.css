@@ -56,7 +56,7 @@
 .sk-three-bounce .sk-child {
     width: 20px;
     height: 20px;
-    background-color: rgb(30, 214, 147);
+    background-color: rgb(89, 119, 127);
     border-radius: 100%;
     display: inline-block;
     animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
