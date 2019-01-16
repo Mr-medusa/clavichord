@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --mode=development"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mr.Medusa",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",
