@@ -2,4 +2,4 @@
 
 ## 一个简单的动画演示页面
 
-### https://mr-medusa.github.io/clavichord/
+### http://mr-medusa.gitee.io/clavichord/
